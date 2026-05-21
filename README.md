@@ -1,42 +1,48 @@
-# sv
+# MTG Coin Flip Simulator
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A coin flip simulator intended for Magic: The Gathering mechanics.
 
-## Creating a project
+This project models coin flip probability with rule-based modifiers inspired by MTG cards such as **Krark’s Thumb**, allowing users to simulate different flipping scenarios and track outcomes over time.
 
-If you're seeing this, you've probably already done this step. Congrats!
+---
 
-```sh
-# create a new project
-npx sv create my-app
-```
+## 🎮 Features
 
-To recreate this project with the same configuration:
+- Flip a single coin
+- Flip X coins (user-defined amount)
+- Flip until first failure (Tails)
+- Flip until first success (Heads)
+- Krark’s Thumb mode (modifies coin outcomes)
+- Live tracking of:
+  - Total Heads
+  - Total Tails
+  - Win rate
+- Flip history log
+- Light/Dark mode toggle
 
-```sh
-# recreate this project
-npx sv@0.15.3 create --template minimal --types ts --add prettier eslint --install npm coin-flip-simulator
-```
+---
 
-## Developing
+## 🧠 Krark’s Thumb Rule
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+When enabled:
+- Each coin flip is replaced with two flips
+- The favorable result is chosen (increases probability of success)
 
-```sh
-npm run dev
+---
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## 🛠 Tech Stack
 
-## Building
+- SvelteKit
+- TypeScript
+- HTML / CSS (custom styling)
+- JavaScript Math.random() for simulation
 
-To create a production version of your app:
+---
 
-```sh
-npm run build
-```
+## 🚀 Getting Started
 
-You can preview the production build with `npm run preview`.
+Clone the repo:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+git clone https://github.com/your-username/mtg-coin-flip-simulator.git
+cd mtg-coin-flip-simulator
