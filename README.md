@@ -23,7 +23,7 @@ The project models coin-flip outcomes using rule-based modifiers, including a si
 
 ## 🧠 Krark’s Thumb
 
-<img src="static/krarks-thumb.jpg" width="180" />
+<img src="static/krarks-thumb.jpg" width="220" />
 
 When enabled, each coin flip is simulated twice and the more favorable outcome is selected. This modifies the underlying probability distribution compared to a standard 50/50 flip.
 
