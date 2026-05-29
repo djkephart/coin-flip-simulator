@@ -6,14 +6,9 @@ Includes a rule-based modifier (**Krark’s Thumb**) and tracks basic flip stati
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
 ![CoinFlip 1](static/CoinFlip1.png)
-
-<p align="center">
-  <img src="static/CoinFlip2.png" width="300" />
-  <img src="static/CoinFlip3.png" width="300" />
-</p>
 
 ---
 
@@ -33,7 +28,7 @@ Includes a rule-based modifier (**Krark’s Thumb**) and tracks basic flip stati
 
 ## 🧠 Krark’s Thumb
 
-When enabled, each flip is simulated twice and the better result is chosen.
+When enabled, each coin flip is simulated twice and the better result is chosen.
 
 ---
 
