@@ -1,67 +1,45 @@
 # 🪙 MTG Coin Flip Simulator
 
-A coin flip simulator inspired by *Magic: The Gathering* mechanics.
+A simple coin flip simulator inspired by Magic: The Gathering mechanics.
 
-This project models probability using rule-based modifiers such as **Krark’s Thumb**, allowing users to simulate different flipping scenarios and track outcomes over time.
+Includes a rule-based modifier (**Krark’s Thumb**) and tracks basic flip statistics over time.
 
 ---
 
 ## 📸 Screenshots
 
-### Full Application
-
 ![CoinFlip 1](static/CoinFlip1.png)
 
----
-
-### Stats & History
-
 <p align="center">
-  <img src="static/CoinFlip2.png" width="48%" />
-  <img src="static/CoinFlip3.png" width="48%" />
+  <img src="static/CoinFlip2.png" width="300" />
+  <img src="static/CoinFlip3.png" width="300" />
 </p>
 
 ---
 
 ## 🎮 Features
 
-- Flip a single coin
-- Flip X coins (user-defined amount)
-- Flip until first success (Heads)
-- Flip until first failure (Tails)
-- Krark’s Thumb mode (rule-modified probability system)
-- Live tracking of:
-  - Total Heads
-  - Total Tails
-  - Win Rate
-- Flip history log (last 20 actions)
-- Light / Dark mode toggle
+- Flip a coin
+- Flip X coins
+- Flip until success or failure
+- Krark’s Thumb mode
+- Tracks:
+  - Heads / Tails
+  - Win rate
+- Flip history
+- Light / Dark mode
 
 ---
 
-## 🧠 Krark’s Thumb Rule
+## 🧠 Krark’s Thumb
 
-When enabled:
-- Each coin flip is simulated twice
-- The more favorable outcome is chosen
-
-This creates a biased probability shift that can be observed over time.
+When enabled, each flip is simulated twice and the better result is chosen.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech
 
 - SvelteKit
 - TypeScript
 - HTML / CSS
-- JavaScript (`Math.random()` simulation)
-
----
-
-## 🚀 Getting Started
-
-```bash
-git clone https://github.com/your-username/coin-flip-simulator.git
-cd coin-flip-simulator
-npm install
-npm run dev
+- JavaScript
