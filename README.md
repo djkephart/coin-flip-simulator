@@ -12,6 +12,14 @@ Includes a rule-based modifier (**Krark’s Thumb**) and tracks basic flip stati
 
 ---
 
+## 🧠 Krark’s Thumb
+
+<img src="static/krarks-thumb.jpg" width="200" />
+
+When enabled, each coin flip is simulated twice and the better result is chosen.
+
+---
+
 ## 🎮 Features
 
 - Flip a coin
@@ -23,12 +31,6 @@ Includes a rule-based modifier (**Krark’s Thumb**) and tracks basic flip stati
   - Win rate
 - Flip history
 - Light / Dark mode
-
----
-
-## 🧠 Krark’s Thumb
-
-When enabled, each coin flip is simulated twice and the better result is chosen.
 
 ---
 
