@@ -10,7 +10,12 @@
 
     let krarksThumb = $state(false);
 
-    let history = $state<string[]>([]);
+    type HistoryEntry = {
+        text: string;
+        krark: boolean;
+    };
+
+    let history = $state<HistoryEntry[]>([]);
 
     function basicFlip(): string {
         return Math.random() < 0.5 ? 'Heads' : 'Tails';
@@ -34,14 +39,17 @@
     }
 
     function log(entry: string) {
-        history = [entry, ...history].slice(0, 20);
+        history = [
+            { text: entry, krark: krarksThumb },
+            ...history
+        ].slice(0, 20);
     }
 
     function singleFlip() {
         const flip = performFlip();
         updateStats(flip);
         result = `One Coin : ${flip}`;
-        log(`1 coin → ${flip}`);
+        log(`Flip One Coin → ${flip}`);
     }
 
     function flipXCoins() {
@@ -56,7 +64,7 @@
             updateStats(flip);
         }
 
-        const msg = `X Flip (${xValue}) → H:${heads} T:${tails}`;
+        const msg = `Flip X (${xValue}) Coins → H:${heads} T:${tails}`;
         result = msg;
         log(msg);
     }
@@ -72,7 +80,7 @@
             streak++;
         }
 
-        const msg = `Until Failure → ${streak} success flips`;
+        const msg = `Flip Until Failure → ${streak} success flips`;
         result = msg;
         log(msg);
     }
@@ -88,7 +96,7 @@
             if (flip === 'Heads') break;
         }
 
-        const msg = `Until Success → ${attempts} flips`;
+        const msg = `Flip Until Success → ${attempts} flips`;
         result = msg;
         log(msg);
     }
@@ -165,7 +173,12 @@
             {:else}
                 <ul>
                     {#each history as h}
-                        <li>{h}</li>
+                        <li>
+                            {h.text}
+                            <span class="tag">
+                                {h.krark ? ' (Krark ON)' : ' (Krark OFF)'}
+                            </span>
+                        </li>
                     {/each}
                 </ul>
             {/if}
@@ -235,7 +248,6 @@
     border-radius: 16px;
 }
 
-/* ✅ HARD LOCK CENTER FIX */
 .card h2 {
     width: 100%;
     text-align: center;
@@ -336,6 +348,12 @@ ul {
 
 .muted {
     opacity: 0.6;
+}
+
+.tag {
+    opacity: 0.6;
+    font-size: 12px;
+    margin-left: 6px;
 }
 
 </style>
