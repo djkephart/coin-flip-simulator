@@ -10,7 +10,7 @@ This project explores rule-modified randomness using coin-flip simulations, incl
 ### 🖥️ Full Interface
 A clean overview of the full application layout in its default state.
 
-![CoinFlip 1](CoinFlip1.png)
+![CoinFlip 1](static/CoinFlip1.png)
 
 ---
 
