@@ -1,12 +1,21 @@
 # 🪙 MTG Coin Flip Simulator
 
-A simple coin flip simulator inspired by Magic: The Gathering mechanics.
+An interactive probability simulator inspired by *Magic: The Gathering* mechanics.
 
-Includes a rule-based modifier (**Krark’s Thumb**) and tracks basic flip statistics over time.
+The project models coin-flip outcomes using rule-based modifiers, including a simulation of **Krark’s Thumb**, and tracks results in real time.
 
 ---
 
-## 📸 Screenshot
+## 🛠 Tech Stack
+
+- SvelteKit  
+- TypeScript  
+- HTML / CSS  
+- JavaScript  
+
+---
+
+## 📸 Preview
 
 ![CoinFlip 1](static/CoinFlip1.png)
 
@@ -14,29 +23,31 @@ Includes a rule-based modifier (**Krark’s Thumb**) and tracks basic flip stati
 
 ## 🧠 Krark’s Thumb
 
-<img src="static/krarks-thumb.jpg" width="200" />
+<img src="static/krarks-thumb.jpg" width="180" />
 
-When enabled, each coin flip is simulated twice and the better result is chosen.
+When enabled, each coin flip is simulated twice and the more favorable outcome is selected. This modifies the underlying probability distribution compared to a standard 50/50 flip.
 
 ---
 
 ## 🎮 Features
 
-- Flip a coin
-- Flip X coins
-- Flip until success or failure
-- Krark’s Thumb mode
-- Tracks:
-  - Heads / Tails
-  - Win rate
-- Flip history
-- Light / Dark mode
+- Single coin flip simulation  
+- Batch coin flips (X flips)  
+- Flip until success or failure  
+- Krark’s Thumb mode (rule-based probability modifier)  
+- Live statistics tracking:
+  - Heads / Tails  
+  - Win rate  
+- Session history log  
+- Light / Dark mode toggle  
 
 ---
 
-## 🛠 Tech
+## 📊 Project Focus
 
-- SvelteKit
-- TypeScript
-- HTML / CSS
-- JavaScript
+This project demonstrates:
+
+- Probabilistic simulation modeling  
+- Rule-based system design  
+- Reactive state management in SvelteKit  
+- Clean interactive UI architecture  
