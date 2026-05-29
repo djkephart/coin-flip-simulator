@@ -1,57 +1,51 @@
 # 🪙 MTG Coin Flip Simulator
 
-An interactive probability simulation tool inspired by *Magic: The Gathering* mechanics.  
-This project explores rule-modified randomness using coin-flip simulations, including mechanics such as **Krark’s Thumb**, and provides real-time tracking of outcomes, statistics, and session history.
+A coin flip simulator inspired by *Magic: The Gathering* mechanics.
+
+This project models probability using rule-based modifiers such as **Krark’s Thumb**, allowing users to simulate different flipping scenarios and track outcomes over time.
 
 ---
 
-## 📸 Preview
+## 📸 Screenshots
 
-### 🖥️ Full Interface
-A clean overview of the full application layout in its default state.
+### Full Application
 
 ![CoinFlip 1](static/CoinFlip1.png)
 
 ---
 
-### 🌙 Dark Mode + Live Statistics
-Displays real-time tracking of heads, tails, and win rate with Krark’s Thumb enabled.
+### Stats & History
 
-![CoinFlip 2](CoinFlip2.png)
-
----
-
-### ☀️ Light Mode + History Log
-Shows session history and flip tracking in light mode for readability comparison.
-
-![CoinFlip 3](CoinFlip3.png)
+<p align="center">
+  <img src="static/CoinFlip2.png" width="48%" />
+  <img src="static/CoinFlip3.png" width="48%" />
+</p>
 
 ---
 
-## 🎮 Core Features
+## 🎮 Features
 
-- Flip a single coin with simulated randomness
-- Flip X coins (user-defined batch simulation)
+- Flip a single coin
+- Flip X coins (user-defined amount)
 - Flip until first success (Heads)
 - Flip until first failure (Tails)
 - Krark’s Thumb mode (rule-modified probability system)
-- Real-time statistics tracking:
+- Live tracking of:
   - Total Heads
   - Total Tails
   - Win Rate
-- Session history log (last 20 actions)
+- Flip history log (last 20 actions)
 - Light / Dark mode toggle
 
 ---
 
-## 🧠 Krark’s Thumb Mechanics
+## 🧠 Krark’s Thumb Rule
 
-When enabled, coin flips are modified as follows:
+When enabled:
+- Each coin flip is simulated twice
+- The more favorable outcome is chosen
 
-- Each flip is simulated twice
-- The more favorable outcome is selected
-
-This creates a biased probability distribution that diverges from standard 50/50 randomness over time, allowing users to observe long-term statistical effects.
+This creates a biased probability shift that can be observed over time.
 
 ---
 
@@ -59,26 +53,15 @@ This creates a biased probability distribution that diverges from standard 50/50
 
 - SvelteKit
 - TypeScript
-- HTML / CSS (custom styling)
-- JavaScript (`Math.random()` based simulation logic)
-
----
-
-## 📊 Project Goals
-
-This project was built to demonstrate:
-
-- Probabilistic simulation modeling
-- Rule-based modification of randomness
-- Reactive UI state management in SvelteKit
-- Clean UI structuring and user interaction design
+- HTML / CSS
+- JavaScript (`Math.random()` simulation)
 
 ---
 
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/mtg-coin-flip-simulator.git
-cd mtg-coin-flip-simulator
+git clone https://github.com/your-username/coin-flip-simulator.git
+cd coin-flip-simulator
 npm install
 npm run dev
